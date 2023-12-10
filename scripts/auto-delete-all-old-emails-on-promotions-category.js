@@ -1,4 +1,3 @@
-
 const OLD_EMAILS_ON_PROMOSTIONS_CATEGORY = 'category:promotions older_than:4m';
 const PORMOTION_EMAILS_PAGE_SIZE = 500; // for pagination
 function deleteOldCategory() {
