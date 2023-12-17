@@ -9,12 +9,12 @@ const LINKED_IN_EMAILS = [ // all LinkedIn receiving emails
 
 const APP_SCRIPT_NOTIFICATION_EMAIL = 'noreply-apps-scripts-notifications@google.com'; // app script notification
 
-const ALL_BACKLIST_SOURCE_EMAILS = [
+const ALL_BLACKLIST_SOURCE_EMAILS = [
     ...LINKED_IN_EMAILS,
     APP_SCRIPT_NOTIFICATION_EMAIL,
 ]
 
-const MATCH_MULTIPLE_FORM_TERM = ALL_BACKLIST_SOURCE_EMAILS.map(fromEmail => `from:${fromEmail}`).join(' OR ');
+const MATCH_MULTIPLE_FORM_TERM = ALL_BLACKLIST_SOURCE_EMAILS.map(fromEmail => `from:${fromEmail}`).join(' OR ');
 
 // See https://support.google.com/mail/answer/7190?hl=en
 const SOCIAL_CRITERION = 'category:social';
